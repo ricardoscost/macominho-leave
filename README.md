@@ -33,3 +33,11 @@ npm run dev
 - Notificações
 - Múltiplas equipas/departamentos
 - Exportações
+
+## Deploy (evitar erro 404/NOT_FOUND)
+Para deploy em plataformas com SPA routing:
+
+- **Vercel**: já incluído `vercel.json` com rewrite global para `index.html`.
+- **Netlify**: já incluído `netlify.toml` com redirect `/* -> /index.html`.
+
+Isto evita erros `404: NOT_FOUND` ao abrir rotas do React Router diretamente.
